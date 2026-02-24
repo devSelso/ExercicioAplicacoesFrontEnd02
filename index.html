@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
 
   <!-- TODO 1: Adicione a meta tag de viewport para tornar a página responsiva -->
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Lista de Tarefas</title>
-
   <!-- TODO 2: Vincule o arquivo CSS externo localizado em assets/css/style.css -->
-
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <!-- ===== CABEÇALHO ===== -->
@@ -28,12 +31,14 @@
            - id="inputTarefa"
            - placeholder="Digite uma nova tarefa..."
       -->
+      <input type="text" id="inputTarefa" placeholder="Digite uma nova tarefa">
 
       <!-- TODO 4: Crie um botão com:
            - id="btnAdicionar"
            - Texto: "Adicionar"
            - Evento onclick que chame a função adicionarTarefa()
       -->
+      <button id="btnAdicionar" onclick="adicionarTarefa()">Adicionar</button>
 
     </section>
 
@@ -46,6 +51,7 @@
     <section id="listaTarefas">
 
       <!-- TODO 5: Crie uma lista não-ordenada com id="lista" -->
+      <ul id="lista"></ul>
 
     </section>
 
@@ -58,5 +64,8 @@
 
   <!-- TODO 6: Vincule o arquivo JavaScript localizado em assets/js/script.js -->
 
+
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
